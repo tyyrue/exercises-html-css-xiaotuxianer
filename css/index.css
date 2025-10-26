@@ -1,0 +1,306 @@
+/* index的专门样式 */
+.entry{
+    height:500px;
+    background-color: #F5F5F5;
+}
+.entry .w{
+    height: 100%;
+    /* background:url(../uploads/banner1.png) no-repeat center/cover; */
+}
+.category{
+    height: 500px;
+    width: 250px;
+    background-color: rgba(0, 0, 0, 0.42);
+}
+.category ul li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 0 12px 0 29px;
+    color: #FFF;
+}
+.category ul a{
+    color: #FFF;
+    font-size: 14px;
+}
+.category ul a:first-child{
+    font-size: 16px;
+    margin-right: 14px;
+}
+.category ul li:hover{
+    background-color: #00BE9A;
+}   
+.category ul a:hover{
+    color: #c7c7c7;
+}
+.banner{
+    position: relative;
+}
+.banner .circle{
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+.banner .circle li{
+    width: 14px;
+    height: 14px;
+    background-color: #ffffff75;
+    border-radius: 50%;
+    margin: 0 8px;
+}
+/* 鼠标经过利用阴影实现边框效果 */
+.banner .circle li:hover{
+    background-color: #ffffff;
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.5);
+}
+
+.category{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 99;
+}
+.entry .w{
+    position: relative;
+}
+
+/* 轮播图切换按钮 */
+.banner .prev{
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+    left: 250px;
+    width: 40px;
+    height: 60px;
+    background-color: #0000007c;
+}
+.banner .next{
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+    right: 0px;
+    width: 40px;
+    height: 60px;
+    background-color: #0000007c;
+}
+
+.banner .prev i{
+    text-align: center;
+    line-height: 60px;
+    font-size: 30px;
+    color: #FFF;
+    margin-left: 0px;
+}
+
+.banner .next i{
+    text-align: center;
+    line-height: 60px;
+    font-size: 30px;
+    color: #FFF;
+    margin-left: 12px;
+}
+
+
+/* 新鲜好物模块 */
+.w .box-hd{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 112px;
+    
+}
+.w .box-hd h2{
+    font-size: 30px;
+    font-weight: 400;
+}
+.w .box-hd h2 small{
+    font-size: 16px;
+    color: #a1a1a1;
+    margin-left: 30px;
+}
+.w .box-hd a{
+    font-size: 16px;
+    color: #a1a1a1;
+}
+.w .box-bd ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.box-bd ul li{
+    width: 304px;
+    height: 404px;
+    background-color: #EEF9F4;
+    text-align: center;
+}
+
+.box-bd ul li img{
+    width: 304px;
+    height: 304px;  
+}
+.box-bd ul li img:hover{
+    /* 隐藏图片超出图片范围的部分 */
+    transform: scale(1.05);
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.box-bd ul li .title{
+    color: #333333; 
+    font-size: 20px;
+    margin: 18px 0 15px 0;
+    padding: 0 25px;
+    /* 单行文字溢出显示省略号 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.box-bd ul li .price{
+    color: #AA2113;
+    font-size: 22px;
+}
+.box-bd ul li a{
+    display: block;
+    height: 100%;
+}
+/* 人气推荐模块 */
+.hot .box-bd ul li{    
+    background-color: #ffffff;
+}
+.hot .box-bd ul li p{
+    font-size: 16px;
+    color: #a1a1a1;
+}
+.hot .box-bd{
+    margin-bottom: 60px;
+}
+/* 热门品牌模块 */
+.brand{
+    height: 468px;
+    background-color: #F5F5F5;
+}
+.brand .w .box-bd ul li{
+    display: block;
+    width: 244px;
+    height: 306px;
+}
+.brand .w .box-bd ul li a img{
+    width: 244px;
+    height: 306px;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:102px ;
+    padding-top: 10px;
+}
+.head h2{
+    font-size: 30px;
+}
+.head .head-right{
+    display: flex;
+}
+.head-right a{
+    font-size: 16px;
+    color: #a1a1a1;
+}
+.head .head-right ul{
+    display: flex;
+    gap: 10px;
+}
+.head .head-right>a{
+    margin-left: 65px;
+}
+.head-right li a{
+    padding: 3px 5px;
+}
+.head-right li a:hover{
+    border-radius: 5px;
+    color: #FFFFFF ;
+    background-color: #00BE9A;
+
+}
+.body{
+    display: flex;
+    justify-content: space-between;
+}
+.body .body-l{
+    width: 248px;
+    height: 610px;
+}
+.body .body-r{
+    display: flex;
+    flex-wrap: wrap;
+    width: 968px;
+    height: 610px;
+}
+.body .body-r li{
+    width: 242px;
+    height: 305px;
+    padding: 10px 21px 0 21px;
+}
+.body .body-r li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 19px;
+}
+.body .body-r li a img{
+    width: 200px;
+    height: 180px;
+}
+.body .body-r li a h3{
+    /* 单行文字溢出显示省略号 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-top: 10px;
+    font-size: 16px;
+}
+.body .body-r li a .price{
+    margin-top: 12px;
+    font-size: 22px;
+    color: #AF2F22;
+}
+/* news专题 */
+.news ul{
+    display: flex; 
+    gap: 12px;
+}
+.news ul li{
+    flex: 1;
+    height: 355px;
+}
+.news ul li div img{
+    width: 100%;
+}
+.news ul li .con{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 67px;
+    padding: 12px;
+    padding: 0 15px;
+    font-size: 16px;
+    color: #666;
+}
+.news ul li .con .like{
+    margin-right: 20px;
+}
+.news{
+    margin-bottom: 60px;
+}
+
+
+
+
+
+
+
+
+
+
