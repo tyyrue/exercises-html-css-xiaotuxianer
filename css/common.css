@@ -1,5 +1,8 @@
 /* 公共样式 */
 
+
+
+
 /* w版心:设置宽度，水平居中 */
 .w{
     width: 1240px; 
@@ -39,13 +42,25 @@
             color: #5EB69C;
     }
     /* 1.2header部分 */
+    .sticky{
+        position: sticky;
+        top: 0px;
+        background-color: #fff;
+        z-index: 100;
+    }
     .header{
         display:flex;
+        /* position:sticky;
+        top: 0px; */
         justify-content: space-between;
         align-items: center;
         height: 132px;
         background-color: #FFFFFF;
+        
     }
+
+
+         
         
     .header .logo {
         height: 88px;
