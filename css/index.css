@@ -102,7 +102,16 @@ body{
     height: 60px;
     background-color: #0000007c;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
+.banner .prev:hover{
+    background-color: #000000c0;
+    
+}
+.banner .next:hover{
+    background-color: #000000c0;
+    
+}   
 .banner .next{
     position: absolute;
     top: 50%;
@@ -112,6 +121,7 @@ body{
     height: 60px;
     background-color: #0000007c;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .banner .prev i{
