@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/index.css">
+    
     </head>
 <body>
     <!-- 返回顶部固定定位 -->
@@ -161,11 +162,12 @@
                     </ul>
                     <!-- 小圆点 -->
                     <ul class="circle">
-                        <li></li>
+                        <li class="active"></li>
                         <li></li>
                         <li></li>      
                     </ul>
                     <!-- 切换按钮 -->
+    
                     <a class="prev"><i class="iconfont icon-arrow-left-bold"></i></a>
                     <a class="next"><i class="iconfont icon-arrow-right-bold"></i></a>
                 </div> 
@@ -466,18 +468,47 @@
 
 
 
+<script>
+        
+        const ne = document.querySelector('.banner .next');
+        const pr = document.querySelector('.banner .prev');
+        let index = 1;
+        const banner = document.querySelector('.banner ul li img');
+        
+        ne.addEventListener('click',function(){
+                
+            if(index>=3){
+                index=1;
+            }
+            else{
+                index++;
+            }
+            banner.src = `./uploads/banner${index}.png`;
+            const circle = document.querySelector('.banner .circle .active');
+            circle.classList.remove('active');
+            document.querySelector(`.banner .circle li:nth-child(${index})`).classList.add('active');   
+            
+        })
+        pr.addEventListener('click',function(){
+            if(index<=1){
+                index=3;
+            }
+            else{
+                index--;
+            }
+            banner.src = `./uploads/banner${index}.png`;
+            const circle = document.querySelector('.banner .circle .active');
+            circle.classList.remove('active');
+            document.querySelector(`.banner .circle li:nth-child(${index})`).classList.add('active');   
+            
+        })
+
+        
+        
 
 
 
-
-
-
-
-
-
-
-
-
+</script>
 
 
 
